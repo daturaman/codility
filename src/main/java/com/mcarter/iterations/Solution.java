@@ -14,6 +14,22 @@ package com.mcarter.iterations;
  */
 public class Solution {
 	public int solution(int N){
-		return 0;
+		String binary = Integer.toBinaryString(N);
+		int count = 0;
+		int result = 0;
+		boolean counting = false;
+		for(int i = 0; i < binary.length(); i++){
+			if(binary.charAt(i) == '1' && !counting){
+				counting = true;
+			}
+			if(binary.charAt(i) == '0' && counting && i < binary.length()-1){
+				count++;
+			}
+			if(binary.charAt(i)== '1' && counting && count > result){
+				result = count;
+				counting = false;
+			}
+		}
+		return result;
 	}
 }
