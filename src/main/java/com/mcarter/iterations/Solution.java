@@ -20,15 +20,17 @@ public class Solution {
 		boolean counting = false;
 		for(int i = 0; i < binary.length(); i++){
 			if(binary.charAt(i) == '1' && !counting){
-				counting = true;
-			}
-			if(binary.charAt(i) == '0' && counting && i < binary.length()-1){
-				count++;
-			}
-			if(binary.charAt(i)== '1' && counting && count > result){
-				result = count;
-				counting = false;
-			}
+                counting = true;
+            }
+            if(binary.charAt(i) == '1' && counting){
+                if(count > result){
+                    result = count;
+                }
+                count = 0;
+            }
+            if(binary.charAt(i)=='0' && counting){
+			    count++;
+            }
 		}
 		return result;
 	}
