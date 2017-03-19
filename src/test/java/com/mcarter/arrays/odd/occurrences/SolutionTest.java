@@ -16,7 +16,8 @@ public class SolutionTest {
 
     @Parameters(name = "{index}: when array contains {0} then odd integer is {1}")
     public static Iterable<Object[]> data() {
-        return Arrays.asList(new Object[][]{{new int[]{9, 3, 9, 3, 9, 7, 9}, 7}, {new int[]{1, 2, 1}, 2}, {new int[]{1, 0, 0, 0, 0}, 1}, {new int[]{7, 0, 7, 0, 5}, 5}});
+        return Arrays.asList(new Object[][]{{new int[]{9, 3, 9, 3, 9, 7, 9}, 7}, {new int[]{1, 2, 1}, 2}, {new int[]{1, 0, 0, 0, 0}, 1}, {new int[]{7, 0, 7, 0, 5}, 5},
+                {new int []{2, 2, 3, 3, 4}, 4}});
     }
 
     @Parameter()
