@@ -5,14 +5,14 @@ package com.mcarter.arrays.cyclic.rotation;
  */
 public class Solution {
     public int[] solution(int[] A, int K) {
-    //WRONG
         for(;K > 0;K--){
-            int head = A[0];
-            int tail = A[A.length-1];
-            A[0] = tail;
-            A[A.length-1] = head;
+            for(int i = 0; i < A.length; i++){
+                int head = A[i];
+                int tail = A[A.length-1];
+                A[i] = tail;
+                A[A.length-1] = head;
+            }
         }
-
         return A;
     }
 }
