@@ -12,6 +12,7 @@ package com.mcarter.time.complexity;
  */
 public class Solution {
 	public int solution(int X, int Y, int D){
-		return 0;
+		double arse = ((double)(Y-X)/D);
+		return (int) Math.ceil((Y-X)/D);
 	}
 }
