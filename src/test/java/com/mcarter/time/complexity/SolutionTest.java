@@ -16,7 +16,7 @@ public class SolutionTest {
 
 	@Parameters(name = "{index}: when start is {0} and finish is {1} and leap distance is {2} then minimum required jumps is {3}")
 	public static Iterable<Object[]> data() {
-		return Arrays.asList(new Object[][] { { 10, 85, 30, 3 } });
+		return Arrays.asList(new Object[][] { { 10, 85, 30, 3 }, { 5, 85, 20, 4 },{ 90, 95, 70, 1 },{ 10, 126, 5, 24 } });
 	}
 
 	@Parameter() public int start;
