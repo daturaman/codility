@@ -13,12 +13,10 @@ package com.mcarter.time.complexity.permmissingelem;
 public class Solution {
 
 	public int solution(int[] A) {
-		int n = A.length + 1;
-		int expected = n * (n + 1) / 2;
-		int result = 0;
+		int expected = (A.length + 1) * ((A.length + 1) + 1) / 2;
 		for (int i : A) {
-			result += i;
+			expected -= i;
 		}
-		return expected - result;
+		return expected;
 	}
 }
