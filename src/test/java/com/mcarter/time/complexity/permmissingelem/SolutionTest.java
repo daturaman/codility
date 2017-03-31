@@ -17,7 +17,7 @@ public class SolutionTest {
 
 	@Parameters(name = "{index}: when array contains {0} then missing integer is {1}")
 	public static Iterable<Object[]> data() {
-		return Arrays.asList(new Object[][]{{new int[]{1,2,3,5}, 14}, {new int[]{1,2,3,4,6}, 5}, {new int[]{2,3,4}, 1}});
+		return Arrays.asList(new Object[][]{{new int[]{1,2,3,5}, 4}, {new int[]{1,2,3,4,6}, 5}, {new int[]{2,3,4}, 1}});
 	}
 
 	@Parameter()
