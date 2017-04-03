@@ -7,6 +7,8 @@
  */
 package com.mcarter.time.complexity.tape.equilibrium;
 
+import java.util.Scanner;
+
 /**
  * @author mcarter
  */
